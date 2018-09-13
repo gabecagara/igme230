@@ -72,9 +72,11 @@ table {
 
 /* makes sure that the table headings are positioned right below my name, and added the padding below so that there is spacing between those headings and the table of content */
 section {
-    padding-top: 25%;
-    padding-bottom: 20px;
+
+    padding-top: 27%;
+    padding-bottom: 1%;
 }
+
 
 /* add padding to the right so that the table of content for "excercises" has space between the "project" table of content. */
 .exercisetable {
@@ -90,10 +92,6 @@ section {
     margin-right: 30px;
     margin-top: 25px;
 
-}
-/* makes the background of the web page yellow */
-body {
-    background: yellow;
 }
 /* makes the clickable link black  */
 a:link {
