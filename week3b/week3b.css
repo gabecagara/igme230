@@ -14,3 +14,38 @@ p, li{
     line-height: 1.6;
 }
 
+
+.subhead{
+    font-size: 80%;
+    padding-top: 0;
+
+}
+
+h1, h2{
+    font-family: serif;
+    border-bottom:1px solid #a2a9b1;
+
+}
+
+h1{
+    margin-bottom: .2em;
+}
+
+#infobox{
+    text-align: center;
+    border-spacing: 10px ;
+}
+
+#infobox th, #infobox td{
+    vertical-align: 30px;
+}
+
+a:hover{
+    border-bottom:1px solid blue;
+}
+
+a[href^="http"]:after {
+    display: inline-block;
+    font-style: 
+}
+
