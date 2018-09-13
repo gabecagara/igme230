@@ -92,6 +92,7 @@ body {
 /* makes the clickable link black  */
 a:link {
     color: black;
+    text-decoration: none;
 
 }
 /* makes the clickable link stay black even after it has been visites   */
