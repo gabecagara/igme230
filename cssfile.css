@@ -98,10 +98,12 @@ a:link {
 /* makes the clickable link stay black even after it has been visites   */
 a:visited {
     color: black;
+    text-decoration: none;
 }
 /* makes the clickable links red when it hovers over it */
 a:hover {
     color: #ff3300;
+    text-decoration: none;
 }
 
 
