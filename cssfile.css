@@ -1,0 +1,82 @@
+h1 {
+
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    ;
+    font-weight: bold;
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    letter-spacing: 80px;
+    font-size: 9vw;
+
+}
+
+.last {
+    line-height: 3.5;
+    color: #E21A1A;
+    
+
+}
+
+
+
+
+h3 {
+    letter-spacing: 8px;
+    font-family: sans-serif;
+    font-size: 1vw;
+    display: inline;
+    padding-left: 20px;
+    color:#E21A1A;
+
+
+}
+
+
+img {
+    float: right;
+    max-width: 30%;
+    max-height: 25%;
+    margin-right: 60px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+td {
+    font-size: .8vw;
+    letter-spacing: 8px;
+    font-family: sans-serif;
+    
+
+}
+
+table {
+    display: inline;
+}
+
+section {
+    display: content;
+    padding-top: 25%;
+    padding-bottom: 20px;
+}
+
+
+
+.rectangle {
+    height: 240px;
+    width: 10px;
+    background-color: #E21A1A;
+    float: right;
+    margin-right: 30px;
+    margin-top: 25px;
+
+}
+
+
+
+
+
+
+
