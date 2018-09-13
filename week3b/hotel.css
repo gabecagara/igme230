@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* centers and makes sure that is the max width */
+#wrapper{
+    max-width:1000px;
+    margin: 0 auto;
+}
+
+p, li{
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
