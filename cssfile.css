@@ -1,8 +1,9 @@
+/* This makes sure that the header one tags are size 60px with a bold weight for a Google Font called Josefin Sans. I positioned absolute it so that no other element on the page will influence its position, except the given straints I give it which is adding a 16px margin, a -40px top so the text will slightly move up, letter spacing for design effect, and a responsive type size when the screen size changes.*/
+
 h1 {
 
     font-size: 60px;
     font-family: 'Josefin Sans', sans-serif;
-    ;
     font-weight: bold;
     position: absolute;
     top: -40px;
@@ -12,22 +13,23 @@ h1 {
 
 }
 
+
+/* the line height adds a height spacing between the first and last name, and I changed it to red for design purposes.*/
 .last {
     line-height: 3.5;
     color: #E21A1A;
-    
-
 }
 
 
+/* adds padding from the left so that it is positioned to right of the Exercise table*/
 .projecttable {
     padding-left: 185px;
-
 }
 
 
 
 
+/* adds design elements to the "exercise" and "projects" headers such as a line spacing and red color. Display Inline makes sure that it stacks horizontally, and I used a responsive font size. Padding on the left gives it a little room to breathe from the left side of the page.*/
 
 h3 {
     letter-spacing: 8px;
@@ -36,11 +38,10 @@ h3 {
     display: inline;
     padding-left: 20px;
     color:#E21A1A;
-
-
 }
 
 
+/* makes my image float to the right of the page, with constraints to its sizing through max-width and max-height. The margin additions makes sure it does not stay too close to the right of the page. I also added code to give the image a drop shadow effect, which I got from this link https://www.w3schools.com/css/css3_shadows.asp which is w3school's tutorial on how to use drop shadows on elements. All credtis go to that in terms of the drop shadow! */
 img {
     float: right;
     max-width: 30%;
@@ -50,7 +51,7 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-
+/* gives the table of content some design by giving it letter spacing between the characters, a responsive font size, and a clean minimal sans serif font. */
 td {
     font-size: .8vw;
     letter-spacing: 8px;
@@ -58,19 +59,23 @@ td {
     
 
 }
-
+/* makes sure that it stacks horizontally*/
 table {
     display: inline;
 }
 
+/* makes sure that the table headings are positioned right below my name, and added the padding below so that there is spacing between those headings and the table of content */
 section {
-    display: content;
     padding-top: 25%;
     padding-bottom: 20px;
 }
 
+/* add padding to the right so that the table of content for "excercises" has space between the "project" table of content. */
+.exercisetable {
+    padding-right: 35px;
+}
 
-
+/* added a red rectangle with given sizes to float on the right of page just for a design element. The margin right and top makes sure that the rectangle is not too close to the top right part of the web page.  */
 .rectangle {
     height: 240px;
     width: 10px;
@@ -80,20 +85,20 @@ section {
     margin-top: 25px;
 
 }
-
+/* makes the background of the web page yellow */
 body {
     background: yellow;
 }
-
+/* makes the clickable link black  */
 a:link {
     color: black;
-    text-decoration: none;
-}
 
+}
+/* makes the clickable link stay black even after it has been visites   */
 a:visited {
     color: black;
 }
-
+/* makes the clickable links red when it hovers over it */
 a:hover {
     color: #ff3300;
 }
