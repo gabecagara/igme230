@@ -14,11 +14,17 @@ h1 {
 }
 
 
-/* the line height adds a height spacing between the first and last name, and I changed it to red for design purposes.*/
-.last {
-    line-height: 3.5;
+/* the line height adds a height spacing between the first and last name */
+
+.container {
+    line-height: 1.3;
+}
+ 
+/* change last name to red for styling */
+#last {
     color: #E21A1A;
 }
+
 
 
 /* adds padding from the left so that it is positioned to right of the Exercise table*/

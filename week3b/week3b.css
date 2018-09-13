@@ -44,8 +44,8 @@ a:hover{
     border-bottom:1px solid blue;
 }
 
-a[href^="http"]:after {
+/* a[href^="http"]:after {
     display: inline-block;
     font-style: 
 }
-
+ */
