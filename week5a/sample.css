@@ -1,0 +1,41 @@
+* { 
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background:  #e5e5e5; 
+    padding: 8px;
+}
+
+aside{
+    width: 100%;
+}
+
+article{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    overflow: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+h3, nav a{
+    background:  #e5e5e5;
+    padding:8px;
+    margin-top: 7px;
+    width:100%;
+    display:block;
+}
