@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 620px) { 
+    aside{
+        float: left;
+        width: 20%;
+    }
+
+    article{
+        float:left;
+        width:60%;
+        padding:0 20px;
+    }
+}
+
 header{
     width: 100%;
     background:  #e5e5e5; 
