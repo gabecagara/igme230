@@ -22,6 +22,9 @@ Flexbox Formatting
     /* centers container in viewport */
     margin: 0 auto;
     max-width: 95vw; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
 }
 
 main {
@@ -30,6 +33,10 @@ main {
     border: 1px solid black; 
     background-color: #ccc;
     margin: .5rem 0; 
+    display: flex; 
+    flex-direction: row;
+    flex: 1;
+    
 
 }
 
@@ -46,6 +53,36 @@ article, nav, aside {
     border: 1px dotted black;
     background-color: #fff;
     margin: .5rem;
-    padding: .5rem;
+   
+}
+
+nav{
+    order: -1;
+}
+
+nav, aside {
+    flex: 0 0 12rem;
+}
+
+article{
+    flex:1;
+}
+
+
+@media screen and (max-width: 36rem){ 
+    main{
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    #wrapper{
+        max-width: none;
+    }
+
+    nav, aside, article{
+        order: 0; /* resets order to source default */
+flex: 1; /* allows elements to grow to available space */
+margin: .5rem 0; /* removes l/r margin spacing */
+    }
 }
 
