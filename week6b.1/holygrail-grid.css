@@ -49,6 +49,8 @@ Grid Formatting
     grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
 }
 
+
+/* assigns elements to named grid areas*/
 header{
     grid-area: header;
 }
@@ -70,6 +72,7 @@ footer{
 }
 
 
+/* redefines the grid from 1x5 to 3x3 when screen is wider than 760px */
 @media screen and (min-width: 760px){
     #wrapper {
         grid-template-areas: "header header header"  /* 1st row: header spans three columns  */
