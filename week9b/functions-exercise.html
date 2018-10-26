@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+       html { font-family: Lato; font-size: 16px; }
+       main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
+   </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>My Favorites</h1>
+    
+        <h2>My Favorite Colors</h2>
+    
+        <ol id="colorsList">
+    
+        </ol>
+    
+        <h2>My Favorite Foods</h2>
+    
+        <ol id="foodsList">
+    
+        </ol>
+    
+      </main>
+    
+    <script>
+        "use strict";
+        let colors = ["blue", "yellow", "gray"]; // add some colors
+        let foods = ["rice", "fries", "adobo"]; // add some foods
+        let colorsList = document.createElement("li");
+        let foodsList = document.createElement("li");
+        
+        
+        
+        for(let i=0; i<colors.length; i++){
+            colorsList.appendChild(i);
+        }
+        for(let i=0; i<foods.length; i++){
+            foodsList.appendChild(i);
+        }
+
+
+// let footer = document.createElement("footer");
+
+//         // 3 - create the text of the <footer>
+// let textNode = document.createTextNode("© 20XX by Ima Student");
+
+// // 4 - insert the text into the <footer>
+// footer.appendChild(textNode);
+
+// // 5 - insert the <footer> at the end of the <body>
+// document.body.appendChild(footer);
+
+// // 6 - center the contents of footer 
+// footer.style.textAlign = "center";
+
+// // 7 - this code does the same thing as #1-#6 above, but without 
+// // document.createTextNode() or element.setAttribute()
+
+// let footer2 = document.createElement("footer");
+// footer2.title = "I'm serious! Don't copy it!";
+// footer2.innerHTML = "&copy; 20XX by Gabe Cagara"
+// document.body.appendChild(footer2);
+// footer2.style.textAlign = "center";
+    </script>
+    
+</body>
+
+</html>
