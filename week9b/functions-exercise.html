@@ -34,41 +34,27 @@
         "use strict";
         let colors = ["blue", "yellow", "gray"]; // add some colors
         let foods = ["rice", "fries", "adobo"]; // add some foods
-        let colorsList = document.createElement("li");
-        let foodsList = document.createElement("li");
-        
-        
-        
-        for(let i=0; i<colors.length; i++){
-            colorsList.appendChild(i);
+      
+
+    function createList(listElement,array){
+        for (let i of colors){
+            let element = document.createElement("li"); // create a list item for element
+            let text = document.createTextNode(i); //creates content to go inside of the <li>
+
+        element.appendChild(text); //adds the content from let text into the <li> created by element
+
+        let list = document.getElementById(listElement); //connects list to the parameter List element
+        list.appendChild(element); //adds all content into the ol
         }
-        for(let i=0; i<foods.length; i++){
-            foodsList.appendChild(i);
-        }
+    }
+
+    createList("colorsList", colors); 
+    createList("foodsList", foods);
+
+    
 
 
-// let footer = document.createElement("footer");
-
-//         // 3 - create the text of the <footer>
-// let textNode = document.createTextNode("© 20XX by Ima Student");
-
-// // 4 - insert the text into the <footer>
-// footer.appendChild(textNode);
-
-// // 5 - insert the <footer> at the end of the <body>
-// document.body.appendChild(footer);
-
-// // 6 - center the contents of footer 
-// footer.style.textAlign = "center";
-
-// // 7 - this code does the same thing as #1-#6 above, but without 
-// // document.createTextNode() or element.setAttribute()
-
-// let footer2 = document.createElement("footer");
-// footer2.title = "I'm serious! Don't copy it!";
-// footer2.innerHTML = "&copy; 20XX by Gabe Cagara"
-// document.body.appendChild(footer2);
-// footer2.style.textAlign = "center";
+    
     </script>
     
 </body>
