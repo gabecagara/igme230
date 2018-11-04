@@ -11,47 +11,59 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Gabe's Portfolio</title>
 
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   </head>
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/aboutme.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.hmtl">Contact</a>
-              </li>
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/aboutme.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.hmtl">Contact</a>
+                  </li>
             </ul>
           </div>
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
         </div>
       </nav>
 
     <div class="container">
-        <div class="description col-lg-8 col-sm-12"> <!--takes up 8 col in desktop, wholescreen in mobile-->
+      <div class="row">
+          <div class="avatar align-middle col-lg-4 col-sm-12">
+              <img class="" src="images/avatar.png" alt="Mini Me">
+            </div>
+        <div class="description align-middle col-lg-8 col-sm-12"> <!--takes up 8 col in desktop, wholescreen in mobile-->
+         
           <h3>Hello</h3>
           <br/>
           <h3>I’m Gabe, your friendly neighborhood 
             aspiring product designer. I’m little bit of
             a thrill seeking, restaurant hopping, fashion
             and cultural-driven human.</h3>
+          </div>
+          <!-- <div class="avatar align-middle col-lg-4 col-sm-12">
+            <img class="" src="images/avatar.png" alt="Mini Me">
+          </div> -->
         </div>
-        <div class="avatar"></div>
    </div>
  
 

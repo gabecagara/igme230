@@ -1,0 +1,52 @@
+.description{
+    margin: auto;
+    margin-top: 200px;
+}
+
+.nav-item{
+    color: #000000;
+}
+
+.nav-link{
+    color: black;
+}
+.navbar-toggler-icon
+{
+    fill: #000000;
+}
+.avatar{
+    float: right;
+    margin-top: 80px; 
+}
+
+.row{
+    margin-top: 200px;
+  
+}
+.card-img-top{
+    margin-bottom: 30px
+}
+
+.projecttitle{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .avatar img{
+      max-width: 40%;
+      margin: auto;
+     margin-left: 30%;
+     margin-top: 15%;
+
+    }
+    /* .avatar{
+        height: 30%
+
+      } */
+
+    .description{
+        margin-top: 30px;
+        
+    }
+}
