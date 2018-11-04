@@ -1,6 +1,6 @@
 .description{
     margin: auto;
-    margin-top: 200px;
+   
 }
 
 .nav-item{
@@ -16,13 +16,13 @@
 }
 .avatar{
     float: right;
-    margin-top: 80px; 
+   
 }
 
-.row{
-    margin-top: 200px;
+/* .row{
+    margin-top: 150px;
   
-}
+} */
 .card-img-top{
     margin-bottom: 30px
 }
@@ -30,6 +30,32 @@
 .projecttitle{
     text-align: center;
 }
+
+
+.nav-link{
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+.content{
+    margin-top: 120px;
+}
+
+.aboutpic{
+    max-width: 70%;
+    margin: auto;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    
+}
+
+.aboutcontainer{
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-bottom: 150px;
+}
+
+
 
 
 @media only screen and (max-width: 992px) {
