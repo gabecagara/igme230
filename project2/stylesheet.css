@@ -241,3 +241,15 @@ margin-left: .5em;
     }
     
 }
+
+  /*printable format*/
+@media print {
+    html {
+        color: #000;
+        background: #fff;
+     }
+
+   @page {
+       size: A4 portrait;
+    }
+ }
