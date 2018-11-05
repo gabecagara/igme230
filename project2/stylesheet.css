@@ -184,17 +184,43 @@ margin-left: .5em;
 
 
 /* media query responsive */
-@media only screen and (max-width: 992px) {
-    .avatar img{
+@media only screen and (max-width: 500px) {
+    .avatar img{  /*shrinks avatar*/
       max-width: 40%;
       margin: auto;
       margin-left: 30%;
     }
 
     .description{
-        margin-top: 30px;
+        margin-top: 30px; /*adds less on top in mobile*/
         
     }
-
-
+    hr{
+        display: none;/*remove line*/
+        
+    }
+    .resumecontent .resumesubheader{
+        margin-left: 10px; /* responsive text margin*/
+        
+        
+    }
+    
+    .resumecontent .resumesubinfo{
+        margin-left: 10px; /* responsive text margin*/
+     
+    }
+    .resumecontent ul{
+        
+        margin-left: 10px; /* responsive text margin*/
+      
+    }
+  
+    .resumecontent h2{
+        margin-left: 10px; /* responsive text margin*/
+   
+    }
+    .resumecontent .ptitle{
+        margin-left: 20px;
+        text-decoration: underline;
+    }
 }
