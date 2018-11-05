@@ -35,17 +35,17 @@
                             <a class="nav-link" href="/projects.html">Projects </a>
                               
                           </li>
-                          <li class="nav-item  active">
+                          <li class="nav-item">
                             <a class="nav-link" href="/aboutme.html">About</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item active">
                             <a class="nav-link" href="/contact.html">Contact</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="/resume.html">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/notes.hmtl">Notes</a>
+                                <a class="nav-link" href="/notes.html">Notes</a>
                               </li>
             </ul>
           </div>
@@ -54,15 +54,29 @@
       </nav>
 
       <div class="container content">
-          <h1>Who Am I?</h1>
-            <img class="aboutpic" src="/images/selfie2.png" alt="Picture of Me">
-            <div class="aboutcontainer">
-                    <p>I got a little story to tell you about a designer in love with interaction, product and visual design. His name is Gabriel, but everybody calls him Gabe. Currently a third year New Media Design student at the Rochester Institute of Technology, he has learned that design is the amalgamation of work ethic, systematic iterations, collaboration, strong coffee, and the use of multidisciplinary skills in design and logical reasoning.
-                        <br>
-                        <br>
-                        <br>
-                            Aside from wire framing and rendering visuals on his Macbook and dot grid notebooks, Gabe loves rice, mind-bending TV shows, social media, making people laugh, and German chocolate. Also, he is [tries to be] a travel photographer! Having been in over 5 continents, he believes that capturing the beautiful moments in life is important, which is very much akin to design.
-                      </p>    
+          <h1>Let's collaborate!</h1>
+          <!-- label references the id to the coresponding widget -->
+          <form action="/my-handling-form-page" method="post">
+            <div>
+                <!-- label references the id to the coresponding widget -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <!-- type attribute is important becos it defines how the input element will behave -->
+                <input type="email" id="mail" name="user_mail">
+              </div>
+              <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </div>
+              <div class="button">
+                  <!-- type attributes include submit(send inputs), reset(removes all input) or button(does nothing) -->
+                    <button type="submit">Submit</button>
+                  </div>
+        </form>
+        
           
 
             </div>
@@ -74,4 +88,3 @@
     </body>
 
     </html>
-    
