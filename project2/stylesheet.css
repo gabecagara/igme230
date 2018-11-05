@@ -1,49 +1,59 @@
+/* centers */
 .description{
     margin: auto;
    
 }
 
+/*visable with black */
 .nav-item{
     color: #000000;
 }
-
+/* changes to nav to black*/
 .nav-link{
     color: black;
 }
+
+/* changes to nav to black*/
 .navbar-toggler-icon
 {
     fill: #000000;
 }
+
+/*positions to right*/
 .avatar{
     float: right;
    
 }
 
-
+/* spacing on top so it is not hidden behind nav*/
 .card-img-top{
     margin-bottom: 30px;
 }
 
+/* centers type*/
 .projecttitle{
     text-align: center;
 }
 
-
+/* go right and change size*/
 .nav-link{
     font-size: 15px;
     margin-right: 50px;
 }
 
+/* spacing on top so not hidden behind nav*/
 .content{
     margin-top: 120px;
 
 }
 
+/* spacing on top so not hidden behind nav*/
 .resumecontent{
     margin-top: 120px;
   
 }
 
+/* targets h1 on resume for style purposes*/
 .resumecontent h1{
     font-family: 'Libre Baskerville', serif;
     text-align: center;
@@ -51,26 +61,32 @@
     color: #328AEC;
 }
 
+/* targets h2 on resume to align 180px with rest of aligned content*/
 .resumecontent h2{
     margin-left: 180px;
     
 }
 
+/*  align 180px with rest of aligned content*/
 .resumecontent .resumesubheader{
     margin-left: 180px;
     color: #328AEC;
 }
 
+/*  align 180px with rest of aligned content with bottom margin*/
 .resumecontent .resumesubinfo{
     margin-left: 180px;
     margin-bottom: 80px;
 }
+/*  align 180px with rest of aligned content and style purposes*/
 .resumecontent ul{
     font-family: 'Libre Baskerville', serif;
     margin-left: 180px;
     margin-bottom: 80px;
     margin-top: 40px;
 }
+
+/* optimized image size*/
 .aboutpic{
     max-width: 70%;
     margin: auto;
@@ -79,12 +95,15 @@
     
 }
 
+/* container with margins*/
 .aboutcontainer{
    margin-left: 15%;
    margin-right: 15%;
    margin-bottom: 10px;
 }
 
+
+/* decoration*/
 u{
     text-decoration: underline;
     text-decoration-color: #DCF356;
