@@ -21,7 +21,7 @@
 
 
 .card-img-top{
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .projecttitle{
@@ -184,7 +184,7 @@ margin-left: .5em;
 
 
 /* media query responsive */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .avatar img{  /*shrinks avatar*/
       max-width: 40%;
       margin: auto;
@@ -207,6 +207,7 @@ margin-left: .5em;
     
     .resumecontent .resumesubinfo{
         margin-left: 10px; /* responsive text margin*/
+        margin-bottom: 50px; /* responsive and legible text margin*/
      
     }
     .resumecontent ul{
@@ -221,6 +222,22 @@ margin-left: .5em;
     }
     .resumecontent .ptitle{
         margin-left: 20px;
+
+        /* new look in mobile*/
         text-decoration: underline;
+        text-align: center; 
     }
+
+    /* new look in mobile*/
+    .content .ptitle{
+     
+        text-decoration: underline;
+        text-align: center; 
+    }
+    .content h3{
+        font-size: 20px;
+        text-align: center; 
+ 
+    }
+    
 }
