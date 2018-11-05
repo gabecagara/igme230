@@ -61,6 +61,10 @@ u{
     border-bottom: #DCF356;
 }
 
+h3{
+    font-family: 'Libre Baskerville', serif;
+}
+
 
 
 @media only screen and (max-width: 992px) {
