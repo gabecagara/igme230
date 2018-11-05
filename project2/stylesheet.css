@@ -19,10 +19,7 @@
    
 }
 
-/* .row{
-    margin-top: 150px;
-  
-} */
+
 .card-img-top{
     margin-bottom: 30px
 }
@@ -42,6 +39,38 @@
 
 }
 
+.resumecontent{
+    margin-top: 120px;
+  
+}
+
+.resumecontent h1{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #328AEC;
+}
+
+.resumecontent h2{
+    margin-left: 180px;
+    
+}
+
+.resumecontent .resumesubheader{
+    margin-left: 180px;
+    color: #328AEC;
+}
+
+.resumecontent .resumesubinfo{
+    margin-left: 180px;
+    margin-bottom: 80px;
+}
+.resumecontent ul{
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 180px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
 .aboutpic{
     max-width: 70%;
     margin: auto;
@@ -91,6 +120,8 @@ p{
     text-align: center;
     margin-bottom: 40px;
 }
+
+
 
 /* Following line of code is from week7b exercise for making a contact page written by Elizabeth Lawley */
 form {
