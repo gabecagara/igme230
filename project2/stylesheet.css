@@ -271,4 +271,44 @@ margin-left: .5em;
    @page {
        size: A4 portrait;
     }
+    header, footer, nav{
+        display: none !important;
+    }
+    .resumecontent{
+    margin-top: 120px;
+  
+}
+
+/* targets h1 on resume for style purposes*/
+.resumecontent h1{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #328AEC;
+}
+
+/* targets h2 on resume to align 180px with rest of aligned content*/
+.resumecontent h2{
+    margin-left: 180px;
+    
+}
+
+/*  align 180px with rest of aligned content*/
+.resumecontent .resumesubheader{
+    margin-left: 180px;
+    color: #328AEC;
+}
+
+/*  align 180px with rest of aligned content with bottom margin*/
+.resumecontent .resumesubinfo{
+    margin-left: 180px;
+    margin-bottom: 80px;
+}
+/*  align 180px with rest of aligned content and style purposes*/
+.resumecontent ul{
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 180px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
  }
