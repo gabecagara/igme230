@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Start</title>
+    <style>
+        #panel1{
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+
+     <!-- use hosted jquery CDN (content delivery network) onto hmtl from google -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+
+</head>
+<body>
+    <!-- buttons -->
+    <button id="show">show</button> <button id="hide">hide</button>
+    
+    <!-- content area -->
+    <div id="panel1">
+        I have text hurr.
+    </div>
+    <script>
+        // <!-- basic hide/show function from w3schools, $ means it is jQuery -->
+        
+        $("#hide").click(function(){
+            $("#panel1").hide();
+        });
+        
+        $("#show").click(function(){
+            $("#panel1").show();
+    });
+
+    
+    
+    </script>
+
+
+
+     <!-- event handler -->
+</body>
+</html>
