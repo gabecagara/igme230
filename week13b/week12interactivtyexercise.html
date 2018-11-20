@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .mygrid{
+            /* makes the div a grid */
+            display: grid; 
+            
+            /* creates the frames and height for the site for the rows to fill in */
+            height: 100vh;
+
+            /* create the columns // 3 columns 150px each // fr = fractions will divide the left over space equally */
+            grid-template-columns: 150px 1fr 1fr;
+            
+            /* create the rows // 100px on top, 1fr to autofill the remaining space in the middle,  */
+            grid-template-rows: 100px 1fr;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .mygrid div{
+            /* centers everything into the center */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            /* just so you can visably see the grids */
+           
+            border: 1px dotted green;
+
+
+        }
+
+        
+
+        .sidebar{
+            grid-row: 2 / -2
+        }
+
+        .footer{
+            /* same columns span as the titlebar! */
+            grid-column: 1 / span 3;
+
+        }
+        .nav{
+            /* same columns span as the titlebar! */
+            grid-column: 1 / span 3;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(189, 248, 140);
+         
+        }
+        .center{
+            /* same columns span as the titlebar! */
+            grid-column: 2 / span 4;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+           
+
+        }
+
+        p{ 
+            padding: 10%;
+        }
+ 
+    
+ 
+    
+    </style>
+</head>
+
+<body>
+    <div class ="mygrid">
+        <!-- any child inside the div is going to be a cell in the grid  -->
+          <div class="nav">GABE CAGARA</div>  
+          <div class="sidebar">
+              
+                <img src=""
+            
+            Cell 2</div> 
+          
+            <div class="center">
+                
+                <p>
+                        I got a little story to tell you about a designer in love with interaction, product and visual design. His name is Gabriel, but everybody calls him Gabe. Currently a third year New Media Design student at the Rochester Institute of Technology, he has learned that design is the amalgamation of work ethic, systematic iterations, collaboration, strong coffee, and the use of multidisciplinary skills in design and logical reasoning!
+
+                </p>
+               
+            </div>  
+
+          <!-- <div class="body">Cell 4</div>   -->
+          <div class="footer">Cell 5</div>
+        
+        
+       
+
+    </div>
+</body>
+</html>
