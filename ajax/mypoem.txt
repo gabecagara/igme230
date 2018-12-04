@@ -1,25 +1,44 @@
-<p id="verse1">Do not go gentle into that good night,
-Old age should burn and rave at close of day;
-Rage, rage against the dying of the light.<br></p>
+<p id="verse1">I am thinking of you
+In my sleepless solitude tonight
+If it's wrong to love you
+Then my heart just won't let me be right
+'Cause I've drowned in you
+And I won't pull through
+Without you by my side <br></p>
 
-<p id="verse2">Though wise men at their end know dark is right,
-Because their words had forked no lightning they
-Do not go gentle into that good night.</p>
+<p id="verse2">I'd give my all to have
+Just one more night with you
+I'd risk my life to feel
+Your body next to mine
+'Cause I can't go on
+Living in the memory of our song
+I'd give my all for your love tonight</p>
 
-<p id="verse3">Good men, the last wave by, crying how bright
-Their frail deeds might have danced in a green bay,
-Rage, rage against the dying of the light.</p>
+<p id="verse3">Baby can you feel me
+Imagining I'm looking in your eyes
+I can see you clearly
+Vividly emblazoned in my mind
+And yet you're so far
+Like a distant star
+I'm wishing on tonight</p>
 
-<p id="verse4">Wild men who caught and sang the sun in flight,
-And learn, too late, they grieved it on its way,
-Do not go gentle into that good night.
+<p id="verse4">I'd give my all to have
+Just one more night with you
+I'd risk my life to feel
+Your body next to mine
+'Cause I can't go on
+Living in the memory of our song
+I'd give my all for your love tonight
 </p>
 
-<p id="verse5">Grave men, near death, who see with blinding sight
-Blind eyes could blaze like meteors and be gay,
-Rage, rage against the dying of the light.</p>
+<p id="verse5">I'd give my all to have
+Just one more night with you
+I'd risk my life to feel
+Your body next to mine
+'Cause I can't go on
+Living in the memory of our song
+I'd give my all for your love tonight</p>
 
-<p id="verse6">And you, my father, there on the sad height,
-Curse, bless, me now with your fierce tears, I pray.
-Do not go gentle into that good night.
-Rage, rage against the dying of the light.</p>
+<p id="verse6">I'd give my all for your love tonight
+(I'd) give my all for your love
+Tonight</p>
