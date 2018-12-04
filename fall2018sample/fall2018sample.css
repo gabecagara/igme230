@@ -1,0 +1,135 @@
+/*********************************
+General Formatting (Do Not Change)
+*********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+nav, aside {
+    background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+/* classes are dots .dot and ids are hashtags #wrapper */ 
+/*rem is for scaling purposes from a predeterined main value- font size at the top is the base value font */
+
+
+#wrapper{
+    width: 100vw;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "article" 
+    "aside" 
+    "footer";
+   
+}
+
+header{
+    grid-area: header;
+
+}
+
+nav{
+    grid-area: nav;
+}
+
+article{
+    grid-area: article;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area:footer; 
+}
+
+/*CSS formatting turns into flexbox mode which helps organize the content within the divs - center, left, right align */
+
+header, footer{
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;   /* vertical center */
+     
+}
+
+.menuitem{
+    background: white;
+    margin: 0; /* no margins */
+    border-top: 1px solid white;
+
+}
+
+.submenu{
+    list-style-type: none;  /* gets rid of every default styling for list items */
+    margin: 0; /* rids margin */
+    padding: 0; /* rids margins */
+    display: hidden; 
+    padding-left: .25rem;
+    background: lightgrey;
+}
+
+/* li property (list items) of the submenu will have these properties */
+.submenu li{
+    padding-left: .25rem;
+    background: lightgrey;
+}
+
+
+
+
+/* for desktop, do this line of code if the screen size is at least 620px */
+
+@media only screen and (min-width: 620px){
+    #wrapper{ 
+        display: grid;
+        width: 90vw;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr 200px;
+        grid-template-rows: 4rem 1fr 3rem;/* 1fr take sup the remaining space that is leftover from the other hardcoded values */
+        grid-template-areas: "header header header"  /* 1st row: header spans three columns  */
+        "aside article nav"  /* 2nd row: one element in each of 3 columns  */
+        "footer footer footer"; /* 3rd row: footer spans three columns */
+    }
+    
+
+}
+
+}

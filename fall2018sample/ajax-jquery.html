@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <title>Initial AJAX File</title>
 
     <style>
@@ -63,13 +65,9 @@
         <form>
             <label for="verse-choose">Choose a verse</label>
             <select id="verse-choose" name="verse-choose">
-                <option value="verse1">Verse 1</option>
-                <option value="verse2">Verse 2</option>
-                <option value="verse3">Verse 3</option>
-                <option value="verse4">Verse 4</option>
-                <option value="verse5">Verse 5</option>
-                <option value="verse6">Verse 6</option>
-            </select>
+                <option value="verse1-2.txt">Verse 1-2</option>
+                <option value="verse3-4.txt">Verse 3-4</option>
+                <option value="verse5-6.txt">Verse 5-6</option>
             </select>
         </form>
 
@@ -81,7 +79,14 @@
     </div>
     <script>
         'use strict';
-        
+        let verse = ("verse1-2.txt")  // sets default verse element
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verse);   // retrieves only default element
+
+        $("#verse-choose").change(function() {
+            verse = $(this).val();
+            $("#selectedverse").load(verse); 
+        });
     </script>
 </body>
 
