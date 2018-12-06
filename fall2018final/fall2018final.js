@@ -1,5 +1,5 @@
-$('.mainmenu').click(function() {
-    $(this).find("submenu").slideToggle(); 
+$(".mainmenu").click(function() {
+    $(".submenu").slideToggle(); 
 });
 
 let selection = ("article0.txt")   /*making the selction to be this text file on default.  */

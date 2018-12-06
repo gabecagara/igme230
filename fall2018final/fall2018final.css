@@ -113,6 +113,7 @@ header, footer, nav{
 }
 
 .submenu li{
+    position: absolute;
     padding-left: .25rem;
     background: #ddd;
 }
