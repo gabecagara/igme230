@@ -41,35 +41,42 @@
 </div>
 
 <script>
+	// select all the input in the paragraph
+	let radiobuttons = document.querySelectorAll("input");
+	
+	
+    // RESPONSE THAT POPS UP IN THE TEXT BOX
+	let response = document.querySelector("#info");
 
-	let currentColor; 
-	let radios = document.getElementsByName("colorGroup"); 
-	let button = document.getElementById("colorButton");
-	button.onclick = buttonHandler;
+	let legend = document.querySelector("#colorform legend"); // text at the top
 
-	for (let i of radios) { 
-		i.onclick = clickHandler; 
+	let button = document.querySelector("#colorButton"); // submit button
+
+	let currentColor = "black"; // setting color value default because the paragraph is empty
+
+	
+	// changing the text for the response which is the peepeepoopoo, changes it when you select a radio button, changes the text to whatever you want it to say. E is radio button. you put the value into it
+	let changeText = (e) => { 
+		response.innerHTML = "You have selected the color " + e.target.value;
+		currentColor = e.target.value;
 	}
 
-	function clickHandler(element) {
-		let para = document.getElementById("info");
-		currentColor = element.target.value;
-
-		para.innerHTML = "The color you selected is: " + element.target.value 
-	}
-
-	function buttonHandler() {
-		let para = document.getElementById("info")
-
-		para.innerHTML = "The color you selected is: " + currentColor
-
-		let legend = document.getElementsByTagName("legend")[0];
-		legend.style.backgroundColor = currentColor;
-
+	// when you hit the submit button, it does the thing uhhhh
+	let finalAnswer = (e) => {
+		 info.innerHTML = "Your FINAL CHOICE is " +  currentColor; // changes the actual color once the button is clicked to the current color
+		 legend.style.color = currentColor;
 	}
 
 
+	// for loop running thru the array of all the radio buttoons, when they are clicked, it registers that it changed the value of text
 
+	for (let i = 0; i < radiobuttons.length; i++) {
+		radiobuttons[i].addEventListener("click", changeText);
+	}
+
+	// when you hit the button, and when it is clicked it triggers the FINALANSWER FUNCTION
+	button.addEventListener("click", finalAnswer);
+	
 
 </script>
 </body>

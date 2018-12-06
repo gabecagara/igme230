@@ -1,0 +1,146 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkblue;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+/*mobile */
+
+#yourgrid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    /*automatically sets the height for the the rows based on just how much you need for the divs*/
+    grid-template-rows: 75px 30px auto auto 30px;
+    
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "article" 
+    "aside" 
+    /* "#extracredit" */
+    "footer";
+   
+}
+
+header{
+    grid-area: header;
+    background: pink;
+
+ 
+
+}
+
+nav{
+    grid-area: nav;
+    background: lavenderblush;
+  
+} 
+
+article{
+    grid-area: article;
+    background: lightcyan;
+    
+}
+
+aside{
+    grid-area: aside;
+    background: lightblue;
+ 
+}
+
+footer{
+    grid-area:footer; 
+    background: pink;
+ 
+}
+
+header, footer, nav{
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;   /* vertical center */
+     
+}
+.mainmenu{
+    display: flex;
+    /* align-content: space-around;
+    justify-content: space-evenly; */
+
+    justify-content: space-evenly; /* horizontal center */
+
+    width: 6rem;
+    background: #ccc;
+
+}
+
+.submenu{
+    list-style-type: none;  /* gets rid of every default styling for list items */
+    margin: 0; /* rids margin */
+    padding: 0; /* rids margins */
+    display: none; /*makes it not show */
+    background: #ddd;
+}
+
+.submenu li{
+    padding-left: .25rem;
+    background: #ddd;
+}
+
+
+
+/* for desktop, do this line of code if the screen size is at least 620px */
+
+@media only screen and (min-width: 620px){
+
+    #yourgrid{ 
+        display: grid;
+        width: 90vw;
+        min-height: 100vh;
+        max-width: 1000px; /* BASICALLY SETTING THE MIN WIDTH TO BE 620PX ANF MAX WIDTH FOR 1200PX */
+        margin: 0 auto;
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 75px 30px 1fr 50px;/* 1fr take sup the remaining space that is leftover from the other hardcoded values */
+        grid-template-areas: 
+        "header header "  /* 1st row: header spans three columns  */
+        "nav nav"  /* 2nd row: one element in each of 3 columns  */
+        "aside article" /* 3rd row: footer spans three columns */
+        "footer footer"
+        ;
+    
+    }
+
+    
+    
+
+}

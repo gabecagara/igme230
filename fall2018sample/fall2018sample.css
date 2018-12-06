@@ -42,12 +42,15 @@ Your Formatting
 /*rem is for scaling purposes from a predeterined main value- font size at the top is the base value font */
 
 
+/*mobile */
+
 #wrapper{
     width: 100vw;
     display: grid;
 
     grid-template-columns: 100%;
-    grid-template-rows: 1fr;
+    /*automatically sets the height for the the rows based on just how much you need for the divs*/
+    grid-template-rows: auto;
     
     grid-template-areas: 
     "header" 
@@ -81,6 +84,12 @@ footer{
 
 /*CSS formatting turns into flexbox mode which helps organize the content within the divs - center, left, right align */
 
+/* // flexbox is used for one HTMLTableRowElement, but grids are used for more sections */
+
+
+/* 1fr and auto does the same thing, it fills the leftover space */
+
+
 header, footer{
     display: flex;
     justify-content: center; /* horizontal center */
@@ -99,7 +108,7 @@ header, footer{
     list-style-type: none;  /* gets rid of every default styling for list items */
     margin: 0; /* rids margin */
     padding: 0; /* rids margins */
-    display: hidden; 
+    display: none; /*makes it not show */
     padding-left: .25rem;
     background: lightgrey;
 }
@@ -116,11 +125,12 @@ header, footer{
 /* for desktop, do this line of code if the screen size is at least 620px */
 
 @media only screen and (min-width: 620px){
+
     #wrapper{ 
         display: grid;
         width: 90vw;
         min-height: 100vh;
-        max-width: 1200px;
+        max-width: 1200px; /* BASICALLY SETTING THE MIN WIDTH TO BE 620PX ANF MAX WIDTH FOR 1200PX */
         margin: 0 auto;
         grid-template-columns: 1fr 2fr 200px;
         grid-template-rows: 4rem 1fr 3rem;/* 1fr take sup the remaining space that is leftover from the other hardcoded values */
