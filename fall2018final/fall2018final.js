@@ -1,4 +1,4 @@
-$('.menu').click(function() {
+$('.mainmenu').click(function() {
     $(this).find("submenu").slideToggle(); 
 });
 
