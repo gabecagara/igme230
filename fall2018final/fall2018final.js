@@ -1,4 +1,4 @@
-$("mainmenu").click(function() {
+$('input: radio[name=mainmenu]').click(function() {
     $(this).find("submenu").slideToggle(); 
 });
 
