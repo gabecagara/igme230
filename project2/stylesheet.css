@@ -1,4 +1,51 @@
 /* centers */
+.avatarme, .intro, .whoami{
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body { background:black; }
+ /* {
+    
+    background: url(1px.png) repeat-y;
+    background-size: 50% auto;
+    width: 100%;
+} */
+
+
 .description{
     margin: auto;
    
@@ -31,8 +78,43 @@
 }
 
 /* centers type*/
-.projecttitle{
+.project{
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-top: 10px;
+    background-size: 100%;
     text-align: center;
+    background-position: center;
+    transition: .2s ease;
+    -webkit-box-shadow: -1px 9px 31px -9px rgba(0,0,0,0.34);
+    -moz-box-shadow: -1px 9px 31px -9px rgba(0,0,0,0.34);
+    box-shadow: -1px 9px 31px -9px rgba(0,0,0,0.34);
+}
+
+.project:hover{
+    background-size: 120%;
+    -ms-transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+    transform: translate(0px, -10px);
+    -webkit-box-shadow: -1px 9px 73px -1px rgba(0,0,0,0.22);
+    -moz-box-shadow: -1px 9px 73px -1px rgba(0,0,0,0.22);
+    box-shadow: -1px 9px 73px -1px rgba(0,0,0,0.22);
+
+}
+
+.microsoft{
+
+    background-image: url(/images/microsoft.png);
+
+}
+
+.drone{
+    background-image: url(/images/iceland.png);
+}
+
+.render{
+    background-image: url(/images/3drender.png);
 }
 
 /* go right and change size*/
@@ -312,3 +394,15 @@ margin-left: .5em;
     margin-top: 40px;
 }
  }
+
+
+ .underline--magical {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+      background-size: 100% 88%;
+    }
+  }

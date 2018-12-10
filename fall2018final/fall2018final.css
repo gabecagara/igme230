@@ -98,10 +98,14 @@ header, footer, nav{
     justify-content: space-evenly; */
 
     justify-content: space-evenly; /* horizontal center */
-
+    
     width: 6rem;
     background: #ccc;
 
+}
+
+nav div{
+    margin: 0 auto;
 }
 
 .submenu{
