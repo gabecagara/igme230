@@ -1,9 +1,13 @@
 /* centers */
-.avatarme, .intro, .whoami{
+.avatarme, .intro, .whoami, .aboutpic{
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
 }
+
+
+
+/* fade in effects */
 @keyframes fadein {
     from {
         opacity:0;
