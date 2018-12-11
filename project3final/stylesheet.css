@@ -5,6 +5,12 @@
     -o-animation: fadein 3s; /* Opera */
 }
 
+.notesimages{
+    width: 100%;
+    margin-bottom: 30px;
+   
+}
+
 
 
 /* fade in effects */
