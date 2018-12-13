@@ -115,16 +115,16 @@ body { background:black; }
 
 .microsoft{
 
-    background-image: url(/images/microsoft.png);
+    background-image: url(images/microsoft.png);
 
 }
 
 .drone{
-    background-image: url(/images/iceland.png);
+    background-image: url(images/iceland.png);
 }
 
 .render{
-    background-image: url(/images/3drender.png);
+    background-image: url(images/3drender.png);
 }
 
 /* go right and change size*/
